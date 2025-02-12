@@ -51,6 +51,7 @@ header {
 @media (max-width: 576px) {
   header {
     max-width: 90%;
+    margin-top: 20px;
   }
 }
 @media (min-width: 577px) and (max-width: 992px) {
