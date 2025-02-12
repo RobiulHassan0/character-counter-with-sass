@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter Assignment</title>
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <script src="https://kit.fontawesome.com/abe1885868.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./logo.png" alt="">
+                <h3>Character Counter</h3>
+            </div>
+            <div class="dark-mode">
+                <i class="fa-solid fa-sun"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-heading">
+            <h1>Analyze your text <br> in real-time.</h1>
+            <div class="textaria-boxes">        
+                <div class="first-textarea">
+                    <textarea placeholder="Start typing here... (or paste your text)"></textarea>
+                </div>
+                <div class="second-textarea">
+                    <textarea>Design is the silent ambassador of your brand. Simplicity is key to effective communication, creating clarity in every interaction. A great design transforms complex ideas into elegant solutions, making them easy to understand. It blends aesthetics and functionality seamlessly.</textarea>
+                </div>
+                <div class="options">
+                    <label><input type="checkbox"> Exclude Spaces</label>
+                    <label><input type="checkbox"> Set Character Limit</label>
+                    <p>Approx. reading time: 0 minute</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="card" id="card-1">
+                <h1> 
+                    <span class="desktop">00</span>
+                    <span class="visibility">278</span>
+                </h1>
+                <p>Total Characters</p>
+            </div>
+            <div class="card" id="card-2">
+                <h1>
+                    <span class="desktop">00</span>
+                    <span class="visibility">39</span>
+                </h1>
+                <p>Word Count</p>
+            </div>
+            <div class="card" id="card-3">
+                <h1>
+                    <span class="desktop">00</span>
+                    <span class="visibility">04</span>
+                </h1>
+                <p>Sentence Count</p>
+            </div>
+        </section>
+        <section class="progress-section">
+            <div class="content">
+                <h4>Letter Density</h4>
+                <p>No characters found. Start typing to see letter density.</p>
+            </div>
+            
+            <div class="visibility">
+                <div class="graph">
+                    <div class="labels">
+                        <p>E</p>
+                        <p>I</p>
+                        <p>T</p>
+                        <p>O</p>
+                        <p>N</p>
+                    </div>
+                    <div class="bars">
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="fill" style="width: 29%;"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="fill" style="width: 26%;"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="fill" style="width: 22%;"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="fill" style="width: 19%;"></div>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <p>40 (29.41%)</p>
+                        <p>29 (21.32%)</p>
+                        <p>26 (19.12%)</p>
+                        <p>22 (16.18%)</p>
+                        <p>19 (13.97%)</p>
+                    </div>
+                </div>
+                <div class="seeMore">
+                    <p>See more <i class="fa-solid fa-chevron-down"></i></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <footer></footer> -->
+</body>
+</html>

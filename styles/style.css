@@ -1,0 +1,402 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "RF Dewi";
+  src: url("../fonts/RFDewi-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RF Dewi";
+  src: url("../fonts/RFDewi-Regular.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RF Dewi";
+  src: url("../fonts/RFDewi-Light.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "RF Dewi", sans-serif;
+}
+
+body {
+  background: #13131B;
+  color: #F3F2F8;
+}
+
+.visibility {
+  display: none;
+}
+@media (max-width: 576px) {
+  .visibility {
+    display: block;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  .visibility {
+    display: block;
+  }
+}
+
+header {
+  max-width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+@media (max-width: 576px) {
+  header {
+    max-width: 90%;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  header {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  width: 45px;
+  margin-right: 15px;
+}
+nav .logo h3 {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+nav .dark-mode {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: #2B2B36;
+}
+nav .dark-mode i {
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  nav .logo img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  nav .logo h3 {
+    font-size: 1rem;
+  }
+  nav .dark-mode {
+    width: 40px;
+    height: 40px;
+  }
+  nav .dark-mode i {
+    font-size: 1rem;
+  }
+}
+
+main {
+  max-width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  main {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  main {
+    max-width: 90%;
+    margin-top: 60px;
+  }
+}
+
+.main-heading {
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.main-heading h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.main-heading .textaria-boxes {
+  width: 100%;
+  margin-top: 50px;
+}
+.main-heading .textaria-boxes .first-textarea textarea {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  background-color: #22222C;
+  color: #F3F2F8;
+  border: 3px solid #282832;
+  padding: 25px 20px;
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+}
+.main-heading .textaria-boxes .first-textarea textarea::placeholder {
+  color: #F3F2F8;
+  font-size: 1.125rem;
+}
+.main-heading .textaria-boxes .second-textarea {
+  display: none;
+}
+.main-heading .options {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.main-heading .options input[type=checkbox] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 0.5px solid #F3F2F8;
+  border-radius: 4px;
+  background: #22222C;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.main-heading .options input[type=checkbox]:checked::after {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+  color: #F3F2F8;
+}
+.main-heading .options label {
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+}
+.main-heading .options p {
+  vertical-align: middle;
+  margin-left: auto;
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  .main-heading h1 {
+    font-size: 4rem;
+  }
+  .main-heading .textaria-boxes .first-textarea {
+    display: none;
+  }
+  .main-heading .textaria-boxes .second-textarea {
+    display: block;
+  }
+  .main-heading .textaria-boxes .second-textarea textarea {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    background-color: #22222C;
+    color: #F3F2F8;
+    border: 2px solid #282832;
+    padding: 25px 20px;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    pointer-events: none;
+  }
+  .main-heading .options {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 576px) {
+  .main-heading h1 {
+    font-size: 2rem;
+  }
+  .main-heading .textaria-boxes .first-textarea {
+    display: none;
+  }
+  .main-heading .textaria-boxes .second-textarea {
+    display: block;
+  }
+  .main-heading .textaria-boxes .second-textarea textarea {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+    background-color: #22222C;
+    color: #F3F2F8;
+    border: 2px solid #282832;
+    padding: 15px 20px;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    pointer-events: none;
+  }
+  .main-heading .options {
+    flex-direction: column;
+    align-items: start;
+  }
+  .main-heading .options p {
+    margin-left: 0;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 60px;
+}
+.cards .card {
+  padding: 40px 30px;
+  border-radius: 12px;
+  color: #000;
+}
+.cards .card h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.cards .card p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.cards #card-1 {
+  background: linear-gradient(to right, #d7a5f3, #8b5cf6);
+}
+.cards #card-2 {
+  background: linear-gradient(to right, #ff9800, #ffc107);
+}
+.cards #card-3 {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+}
+@media (max-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .cards .card h1 .desktop {
+    display: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  .cards .card {
+    padding: 30px 20px;
+  }
+  .cards .card h1 .desktop {
+    display: none;
+  }
+}
+
+.progress-section {
+  margin-top: 35px;
+}
+.progress-section .content {
+  margin-bottom: 50px;
+}
+.progress-section .content h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.progress-section .content p {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 25px;
+}
+.progress-section .graph {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 30px;
+}
+.progress-section .graph .bars, .progress-section .graph .labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.progress-section .graph .bars .bar, .progress-section .graph .labels .bar {
+  border-radius: 10px;
+  background: #22222C;
+  width: 100%;
+  height: 15px;
+}
+.progress-section .graph .bars .fill, .progress-section .graph .labels .fill {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to right, #d7a5f3, #8b5cf6);
+}
+.progress-section .graph .bars .labels p, .progress-section .graph .labels .labels p {
+  padding: 0;
+  margin: 0;
+  line-height: 14px;
+}
+.progress-section .seeMore {
+  margin: 35px 0 50px;
+}
+.progress-section .seeMore p {
+  font-size: 1.15rem;
+  position: relative;
+}
+.progress-section .seeMore i {
+  margin-left: 10px;
+  font-size: 0.7rem;
+  margin-top: 0;
+  position: absolute;
+  top: 25%;
+}
+@media (max-width: 576px) {
+  .progress-section .visibility {
+    display: block;
+  }
+  .progress-section .desktop {
+    display: none;
+  }
+  .progress-section .content {
+    margin-bottom: 30px;
+  }
+  .progress-section .content p {
+    display: none;
+  }
+  .progress-section .graph {
+    gap: 18px;
+  }
+  .progress-section .labels p {
+    line-height: 14.5px;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  .progress-section .visibility {
+    display: block;
+  }
+  .progress-section .desktop {
+    display: none;
+  }
+  .progress-section .content {
+    margin-bottom: 40px;
+  }
+  .progress-section .content p {
+    display: none;
+  }
+  .progress-section .labels p {
+    line-height: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
