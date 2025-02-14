@@ -76,9 +76,8 @@ nav .logo img {
   margin-right: 15px;
 }
 nav .logo h3 {
-  font-family: "RF Dewi", sans-serif;
-  font-weight: 500;
   font-size: 2rem;
+  font-weight: 500;
 }
 nav .dark-mode {
   width: 50px;
@@ -100,6 +99,7 @@ nav .dark-mode i {
   }
   nav .logo h3 {
     font-size: 1rem;
+    font-weight: 500;
   }
   nav .dark-mode {
     width: 40px;
@@ -199,9 +199,6 @@ main {
   margin-left: auto;
 }
 @media (min-width: 577px) and (max-width: 992px) {
-  .main-heading h1 {
-    font-size: 4rem;
-  }
   .main-heading .textaria-boxes .first-textarea {
     display: none;
   }
@@ -230,6 +227,7 @@ main {
 @media (max-width: 576px) {
   .main-heading h1 {
     font-size: 2rem;
+    font-weight: bold;
   }
   .main-heading .textaria-boxes .first-textarea {
     display: none;
@@ -292,7 +290,9 @@ main {
 }
 @media (max-width: 576px) {
   .cards {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
   .cards .card h1 .desktop {
     display: none;
@@ -301,6 +301,8 @@ main {
 @media (min-width: 577px) and (max-width: 992px) {
   .cards .card {
     padding: 30px 20px;
+    border-radius: 12px;
+    color: #000;
   }
   .cards .card h1 .desktop {
     display: none;
@@ -355,6 +357,7 @@ main {
 }
 .progress-section .seeMore p {
   font-size: 1.15rem;
+  font-weight: normal;
   position: relative;
 }
 .progress-section .seeMore i {
